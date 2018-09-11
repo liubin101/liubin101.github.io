@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的相册</title>
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/album.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var index=0;
+		var offset=0;
+		
+       $(".right").click(function(event) {     	
+            turnright();
+       });
+       $(".left").click(function(event) {      	
+            turnleft();
+       });
+       $(".turnl").click(function(event) {
+       	    turnleft();
+       });
+       $(".turnr").click(function(event) {
+       	    turnright();
+       });
+
+        function turnleft(){
+		 if(index>0){
+       	 	offset+=300;
+       	  $(".pic ul").animate({
+                marginLeft:offset
+       	   },500,function(){
+       	   	index-=1;       	   	
+               $(".pic ul li").eq(index).removeClass(); 
+       	       $(".pic ul li").eq(index).addClass('sideimgl');            
+              $(".pic ul li").eq(index+1).toggleClass('midimg');            
+               $(".pic ul li").eq(index+2).removeClass(); 
+       	       $(".pic ul li").eq(index+2).addClass('sideimgr');               
+       	   });
+       	};
+		};
+		function turnright(){
+		 if(index<6){
+       	 	offset-=300;
+       	  $(".pic ul").animate({
+                marginLeft:offset
+       	   },500,function(){
+       	   	index+=1;      	   	
+               $(".pic ul li").eq(index).removeClass(); 
+       	       $(".pic ul li").eq(index).addClass('sideimgl');         	       
+               $(".pic ul li").eq(index+1).toggleClass('midimg');      	       
+               $(".pic ul li").eq(index+2).removeClass(); 
+       	       $(".pic ul li").eq(index+2).addClass('sideimgr');           
+       	   });
+       	};
+		};
+	});
+</script>
+</head>
+<body>
+<div class="head">		
+		<div class="headnavi">
+			<ul>
+				<li><a href="../index.html">主页</a></li>
+				<li><a href="../aboutme/aboutme.html">关于我</a></li>
+			</ul>						
+		</div>
+</div>
+<div class="left"><span class="icon-ctrl1"></span></div>
+<div class="right"><span class="icon-ctrl2"></span></div>
+<div class="turnl"></div>
+<div class="turnr"></div>
+<div class="pic">
+	<ul>
+		<li class="sideimgl">			
+		</li>
+		<li class="midimg">
+			<img src="../images/album/1.jpg">
+			<p>高中食堂的饭</p>
+		</li>
+		<li class="sideimgr">
+			<img src="../images/album/2.jpg">
+			<p>毕业</p>
+		</li>
+		<li>
+			<img src="../images/album/3.jpg">
+			<p>爸爸和奶奶</p>
+		</li>
+		<li>
+			<img src="../images/album/4.jpg">
+			<p>好友</p>
+		</li>
+		<li>
+			<img src="../images/album/5.jpg">
+			<p>领通知书</p>
+		</li>
+		<li>
+			<img src="../images/album/6.jpg">
+			<p>第一次来南昌</p>
+		</li>
+		<li>
+			<img src="../images/album/7.jpg">
+			<p>证件照</p>
+		</li>
+		<li></li>
+	</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+.headimg{
+	display:block;
+	width: 100%;
+	height: 385px;	
+	background-image: url("../images/headimg.jpg");
+	background-size: cover;	
+	position: relative;	
+	z-index: 0;	
+	margin:0 auto;
+	overflow: hidden;
+}
+
+.mypic{
+	width: 250px;
+	height: 250px;
+	background: url("../images/mypic.jpg");
+	border-radius: 50%;
+	margin: 50px auto;	
+	position: relative;	
+}
+.inmypic{
+	width: 200px;
+	height: 60px;	
+	position: absolute;
+	top: 95px;
+	left:25px; 
+	z-index: -1;
+}
+.inmypic li{
+	width: 200px;
+	height: 60px;
+	border-radius: 10px;
+	background: rgba(255,255,255,.6);
+	position: absolute;
+	top: 0px;
+	left:0px;		
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	font-family: FangSong;
+    transition: all 1s;
+}
+.mypic:hover li:nth-child(1){
+	left: -280px;
+	top:-90px;	
+}
+.mypic:hover li:nth-child(2){
+	left: -220px;
+	top:80px;	
+}
+.mypic:hover li:nth-child(3){
+	left: 280px;
+	top:-90px;	
+}
+.mypic:hover li:nth-child(4){
+	left: 220px;
+	top:80px;	
+}
+
+.myword{
+	height: 30px;
+	font-size: 14px;		
+	text-align: center;
+	line-height: 30px;	
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom:10px;
+	
+}
+.picsource{	
+	height: 20px;		
+	position: absolute;
+	right: 35px;
+	bottom: 5px;
+	text-align: right;
+	line-height: 20px;
+	
+}
+.picsource a{
+	color: #313437;	
+	
+}
+.picsource a:hover{
+	color:black;
+}

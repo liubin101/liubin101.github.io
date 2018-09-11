@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+html,body{
+	width:100%;	
+	height: 100%
+}
+body{
+	width:100%;
+	background: url(../images/albumBG.jpg) no-repeat;
+	background-size: cover;	
+}
+
+.head{
+	width: 100%; 
+	height: 40px;	
+	background: rgba(0,0,0,.4);	
+}
+.headnavi{	
+	height: 40px;
+	float: right;
+	margin-right: 70px;		
+}
+.headnavi li{	
+	height: 40px;	
+	float: left;				
+}
+.headnavi a{
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;	
+	color:#D7DADF;		
+}
+.headnavi a:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.pic{
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -500px;
+	margin-top: -250px;	
+	overflow: hidden;
+}
+.pic ul{
+	width:3000px;
+	height: 500px;	
+}
+.pic li{
+	border: 1px solid gray;
+	float: left;
+	background: white;	
+}
+.pic li:first-child{
+	background: rgba(0,0,0,0);
+	border:none;
+}
+.pic li:last-child{
+	background: rgba(0,0,0,0);
+	border:none;
+}
+.pic .sideimgl,.pic .sideimgr{
+	width: 300px;
+	height: 350px;
+	margin-top: 75px;
+	text-align: center;
+    line-height: 315px; 
+}
+.pic .sideimgl img,.pic .sideimgr img{
+	max-width: 280px;
+	max-height: 300px;
+}
+.pic .midimg{	
+	width: 400px;
+	height: 500px;	
+    text-align: center;
+    line-height: 470px; 
+    margin-top:0;
+}
+.pic .midimg img{	
+	max-width: 380px;
+	max-height: 450px;
+		
+}
+.pic .midimg p,.pic .sideimgl p,.pic .sideimgr p{
+	display: block;
+	height: 20px;	
+    text-align: center;
+    line-height: 20px;
+}
+
+.left,.right{
+	width: 60px;
+	height: 120px;
+	position: absolute;	
+	top: 50%;
+	margin-top: -60px;
+	background: rgba(0,0,0,.3);		
+	text-align: center;
+	overflow: hidden;
+        z-index:200;
+}
+.icon-ctrl1,.icon-ctrl2{	
+	display: inline-block;
+	margin-top: 28px;
+	margin-left: 13px;
+	font-size: 60px;
+    color: #fffdf6;	
+}
+.left:hover,.right:hover{
+	background: rgba(0,0,0,.6);
+	cursor:pointer;
+}
+.left{
+	left: 10px;
+}
+.right{
+	right: 10px;
+}
+.icon-ctrl2{	
+    margin-left: -26px; 	
+}
+
+.turnl,.turnr{
+	width: 300px;
+	height: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -175px;	
+	z-index: 100;		
+}
+.turnl{
+	margin-left: -500px;
+}
+.turnr{
+	margin-left: 200px;
+}

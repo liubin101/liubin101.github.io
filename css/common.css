@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	box-sizing: border-box;
+	font-family: Microsoft Yahei;
+}
+a{
+	color:#666;
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+img{
+	vertical-align: middle;
+}
+button{
+	cursor: pointer;
+}
+button,input{
+	font-family: Microsoft YaHei,tahoma,arial,
+	Hiragino Sans GB,\\5b8b\4f53,sans-serif;	
+}
+.font1{	
+	font-size: 50px;
+	font-weight: bold;
+	color: gray;			
+}
+.font2{
+	font-size: 14px;
+	color: #393e46;
+}
+.font3{
+	color:#666;
+	position: absolute;
+	right: 0;
+}
+.font4{
+	font-size: 14px;
+	font-weight: bold;
+}
+
