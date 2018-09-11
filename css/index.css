@@ -148,13 +148,19 @@ body{
 	width: 100px;
 	height: 120px;
 	text-align: center;
-	/* border: 1px solid #474a56; */
+	position: relative;	
 }
 .dl3 dd img{
 	width: 100px;
 	height: 100px;
 }
-
+.dl3 .font5{
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	right: 5px;
+	bottom: 20px;
+}
 .midbody a:hover{
 	text-decoration: underline;
 }
