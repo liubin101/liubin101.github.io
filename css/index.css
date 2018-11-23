@@ -150,7 +150,7 @@ body{
 	text-align: center;
 	position: relative;	
 }
-.dl3 dd img{
+.dl3 dd img,.dl5 dd img{
 	width: 100px;
 	height: 100px;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<title></title>
+<link href="demo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="startPage" id="startPage">
+	<div class="startBtn" id="startBtn">开始游戏</div>
+	<div class="descripBtn" id="descripBtn">玩法说明</div>
+	<a href="../../aboutme/aboutme.html" target="_blank"><div class="aboutMeBtn" id="aboutMeBtn">关于我</div></a>
+</div>
+<div class="wrapper">
+	<div class="left-side">
+		<img src="images/stop.png" id="startP">
+	</div>
+	<div class="main">
+		<div class="header">
+			<div class="score">
+				分数：
+				<span id="score">0</span>
+			</div>
+		</div>
+		<div class="content" id="content">
+			
+		</div>
+		<div class="mobile">
+	<div class="left" id="mo_left"></div>
+	<div class="up" id="mo_up"></div>
+	<div class="right" id="mo_right"></div>
+	<div class="down" id="mo_down"></div>
+</div>
+	</div>
+</div>
+<div class="loser" id="lose">
+	<div class="con">
+		<div class="close" id="close"></div>
+		<span class="loserScore" id="loserScore"></span>
+	</div>
+</div>
+<div class="description" id="description">
+	<div class="close" id="des_close"></div>
+	<h1>玩法说明</h1>
+    <p>1.PC端玩家可以通过键盘↑、↓、←、→键或屏幕上的方向键操控，移动端玩家通过屏幕上的方向键操控</p>
+    <p>2.蛇吃到红苹果加1分，吃到金苹果加3分，金苹果10秒钟出现一次，每次持续5秒</p>
+    <p>3.跑出墙或碰到蛇身游戏结束，移动端中墙的判定会有一点偏差，造成的不便请见谅</p>
+    <p>4.屏幕左上角的按钮可以　暂停/开始　游戏</p>
+    <p>5.得分为20分后，蛇会加速一次，得分为40分后会再加速一次</p>
+    <p>6.游戏中部分图片素材来源于百度图片</p>
+</div>
+
+
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>

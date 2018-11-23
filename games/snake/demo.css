@@ -1,0 +1,198 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.startPage{
+	width: 100%;
+	z-index:999;
+	height: 630px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.startBtn,.descripBtn,.aboutMeBtn{
+	background-color: #6b76ff;
+	height: 80px;
+	width: 200px;
+	border-radius: 20px;
+	cursor:pointer;
+	position: absolute;
+	top:20%;
+	left: 50%;
+	transform: translateX(-100px);
+	text-align: center;
+	font-size: 30px;
+	line-height: 80px;
+	color:#a6cb12;
+}
+.descripBtn{
+    top:40%;
+}
+.aboutMeBtn{
+    top:60%;
+}
+.wrapper{
+	width: 100%;
+	height: 630px;
+	background-image: url('images/background.png');
+	background-size: 100% 100%;
+	position: relative;
+
+}
+.left-side{
+	width: 40px;
+	position: absolute;
+	height: 40px;
+}
+.left-side img{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.main{
+	position: absolute;
+	left: 4.2%;
+    width: 91.6%;
+    height: 100%;
+}
+.description{
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top:10%;
+    background: #ebebe3;
+    padding: 50px 20px;
+    line-height: 30px;
+    display: none;
+}
+.description h1{
+	margin-left: 50%;
+	transform: translateX(-62px);
+	margin-bottom: 5%;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+.score{
+	line-height: 50px;
+	color:#132238;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.content{
+	position: absolute;
+	width: 100%;
+	height: 61%;
+	left: 0;
+	top:8.4%;
+}
+.loser{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 630px;
+	top:0;
+	left:0;
+}
+.con{
+	background-image: url('images/loser.png');
+	background-size: 100% 100%;
+	width: 300px;
+	height: 220px;
+	position: absolute;
+	margin:auto;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	border-radius: 20px;
+}
+.loserScore{
+	display: block;
+	height: 30px;
+	width: 40px;
+	position: absolute;
+	top:50%;
+	left:26%;
+	color:#222;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.close{
+	position: absolute;
+	top:0;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	background-image: url('images/close.png');
+	background-size: 100% 100%;
+	cursor:pointer;
+}
+.food{
+	background-image: url('images/food.png');
+	background-size: 100% 100%;
+}
+.goldfood{
+	background-image: url('images/goldfood.png');
+	background-size: 100% 100%;
+}
+.head{
+	background-image: url('images/head.png');
+	background-size: 100% 100%;
+}
+.body{
+	background-image: url('images/body.png');
+	background-size: 100% 100%;
+}
+.mobile{
+	width: 100%;
+	height: 30%;
+	background: #feffdf;
+	position: relative;
+	top:62.5%;
+	left: 0;
+}
+.mobile .left{
+    width: 100px;
+    height: 50px;
+    background-image: url('images/left.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top:35%;
+    /*left:24%;*/
+    left:18%;
+    
+}
+.mobile .up{
+	width: 50px;
+    height: 50px;
+    background-image: url('images/up.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top:3%;
+    left:42%;
+    
+}
+.mobile .right{
+	width: 100px;
+    height: 50px;
+    background-image: url('images/right.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top:35%;
+    left: 55%;
+    
+}
+.mobile .down{
+	width: 50px;
+    height: 50px;
+    background-image: url('images/down.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top:40%;
+    left: 42%;
+    
+}
